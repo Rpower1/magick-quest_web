@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Video Afspelen en Doorverwijzen</title>
+    <style>
+        body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+        }
+    </style>
+    <link rel="STYLESHEET" href="style.css" type="text/css">
+</head>
+<body>
+    <video id="video" controls autoplay>
+        <source src="eind.mp4" type="video/mp4">
+        Jouw browser ondersteunt geen video.
+    </video>
+    
+    <script>
+        const video = document.getElementById('video');
+        
+        // Zodra de video is afgelopen, doorverwijzen naar een andere pagina
+        video.addEventListener('ended', () => {
+            window.location.href = 'level2code/index2.html';
+        });
+    </script>
+</body>
+</html>

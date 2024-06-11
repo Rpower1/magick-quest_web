@@ -1,0 +1,26 @@
+.knop {
+    height: 72px;
+    border: 0px;
+    border-radius: 1em;
+    justify-content: center;
+    text-shadow: 5px 5px #558ABB;
+    text-align: center;
+    width: 78px;
+ } 
+
+ #leftButton {
+    background-image: url(/main/level1/linksknopeind.png);
+    height: 68px;
+    width: 73px;
+    border: 0px;
+    border-radius: 1em;
+ }
+ #rightButton{
+    background-image: url(/main/level1/knoprechts.png);
+ }
+ #jumpButton{
+    background-image: url(/main/level1/knop.png);
+ }
+ body{
+    background-image: url(/main/level1/lucht.png);
+ }

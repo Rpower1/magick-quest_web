@@ -1,0 +1,28 @@
+#level1{
+    border: 0px;
+    height: 75px;
+    width: 200px;
+    border-radius: 20em;
+    font-size: 40px;
+    background-color: yellow;
+    
+}
+#skin{
+    border: 0px;
+    height: 75px;
+    width: 75px;
+    border-radius: 20em;
+    font-size: 40px;
+    background-color: yellow;
+}
+body{
+    background-image: url(lucht.png);
+ }
+#level2{
+    border: 0px;
+    height: 75px;
+    width: 200px;
+    border-radius: 20em;
+    font-size: 40px;
+    background-color: yellow;
+}

@@ -1,0 +1,33 @@
+document.addEventListener("DOMContentLoaded", () => {
+    // Voeg event listeners toe aan de knoppen
+    const leftButton = document.getElementById("leftButton");
+    const rightButton = document.getElementById("rightButton");
+    const jumpButton = document.getElementById("jumpButton");
+
+    leftButton.addEventListener("click", (event) => {
+        event.preventDefault(); // Voorkom standaardgedrag
+        player.velocityX = -player.speed;
+        playerDirection = -1;
+    });
+
+    rightButton.addEventListener("click", (event) => {
+        event.preventDefault(); // Voorkom standaardgedrag
+        player.velocityX = player.speed;
+        playerDirection = 1;
+    });
+
+    jumpButton.addEventListener("click", (event) => {
+        event.preventDefault(); // Voorkom standaardgedrag
+        if (!player.isJumping) {
+            player.velocityY = -player.jumpPower;
+            player.isJumping = true;
+        }
+    });
+
+    // Voeg andere event listeners en code hier toe
+});
+
+platforms
+    {x: 0, y: canvas.height - 20, width: 200, height: 20},
+    { x: 300, y: canvas.height - 100, width: 200, height: 20 },
+    
